@@ -1,6 +1,7 @@
 package net.t_smovzh.supressormod;
 
 import com.mojang.logging.LogUtils;
+import net.minecraft.world.level.material.Material;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -22,7 +23,9 @@ public class SupressorMod
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
-        ModBlock.register(modEventBus);
+        //ModBlock.register(modEventBus);
+        //ModBlock.register(modEventBus);
+
 
         modEventBus.addListener(this::commonSetup);
 
